@@ -1,0 +1,5 @@
+{
+    "suspicious_ports": [23,4444,5555,5900,6379,9200,11211,27017],
+    "scan_threshold": 10,
+    "scan_time_window_seconds": 5
+}
