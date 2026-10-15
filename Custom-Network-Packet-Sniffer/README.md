@@ -186,6 +186,92 @@ I contributed through configuring, integrating, testing, debugging, and reviewin
 
 I can discuss the project's architecture, explain the detection approach and its limitations, and demonstrate the application and its tests.
 
+## Running the Project
+
+Follow the instructions for your operating system.
+
+### Prerequisites
+
+- Python 3.13 or newer
+- Git (if cloning the repository)
+- Npcap on Windows for live packet capture
+- Root/administrator privileges when required for live capture
+
+### Windows
+
+1. Install Python from [python.org](https://www.python.org/downloads/).
+2. Install [Npcap](https://npcap.com/#download) for live packet capture.
+3. Clone the repository and enter the project directory:
+
+   ```powershell
+   git clone https://github.com/Hariparakash/Cybersecurity-Projects.git
+   cd Cybersecurity-Projects\Custom-Network-Packet-Sniffer
+   ```
+
+4. Create and activate a virtual environment:
+
+   ```powershell
+   py -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   ```
+
+5. Install the dependencies:
+
+   ```powershell
+   python -m pip install -r requirements.txt
+   ```
+
+6. Launch the graphical interface:
+
+   ```powershell
+   python GUI.py
+   ```
+
+If live packet capture fails, verify that Npcap is installed and run the application with the permissions required by your system.
+
+### Linux (Kali Linux / Debian-based distributions)
+
+1. Install Python, pip, virtual-environment support, and Tkinter:
+
+   ```bash
+   sudo apt update
+   sudo apt install python3 python3-pip python3-venv python3-tk
+   ```
+
+2. Clone the repository and enter the project directory:
+
+   ```bash
+   git clone https://github.com/Hariparakash/Cybersecurity-Projects.git
+   cd Cybersecurity-Projects/Custom-Network-Packet-Sniffer
+   ```
+
+3. Create and activate a virtual environment:
+
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
+
+4. Install the dependencies:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+5. Launch the graphical interface:
+
+   ```bash
+   python GUI.py
+   ```
+
+If live packet capture requires elevated privileges, close the application and run it with the appropriate permissions for your system. If using `sudo`, ensure the required Python dependencies are available to the Python interpreter being used.
+
+### Notes
+
+- The graphical interface and live packet capture have different requirements. Opening the GUI does not guarantee that packet capture is configured.
+- Use this tool only on networks and devices you own or have permission to analyze.
+- The project is distributed as Python source code; a standalone executable is not currently provided.
+
 ## Future Improvements
 
 Potential extensions include:
